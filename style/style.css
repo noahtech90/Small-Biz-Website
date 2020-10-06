@@ -1,0 +1,25 @@
+.content-section {
+    margin-top: 2rem;
+}
+
+.menu-items {
+    padding: 1.5rem;
+}
+
+.menu-items h4 {
+    color: blue;
+}
+h1 {
+    font-style: oblique;
+    padding: .6rem;
+}
+
+.today {
+    font-style: oblique;
+    color: blue;
+    margin-left: 2rem;
+}
+
+.active {
+    border-bottom: 2px blue solid;
+}
