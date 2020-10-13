@@ -21,3 +21,7 @@ function changeActive() {
     }
    
 }
+
+function addToFoodCart() {
+    
+}
