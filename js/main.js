@@ -1,7 +1,9 @@
 let today = new Date();
 let formatDate = today.toDateString();
-let selectElement = document.getElementById('today')
+let selectElement = document.getElementById('today');
 selectElement.innerHTML = formatDate;
+
+let foodCart = [];
 
 
 function changeActive() {
@@ -22,6 +24,12 @@ function changeActive() {
    
 }
 
-function addToFoodCart() {
-    
+function addToFoodCart(foodItemId) {
+    foodCart.push(foodItemId)
+}
+
+function showFoodCart() {
+    for (i = 0; i > foodCart.length; i++) {
+        alert(foodCart[i])
+    }
 }

@@ -39,26 +39,26 @@
                                 <div class="col-12" style=><h1>Curries</h1></div>
                                 <div class="menu-items">
                                 <div class="col-8">
-                                    <h4 id='red-curry' onclick="selectItem()">Red Curry</h4>
+                                    <h4 id='red-curry' onclick="addToFoodCart(this.id)">Red Curry</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='green-curry' >Green Curry</h4>
+                                    <h4 id='green-curry' onclick="addToFoodCart(this.id)" >Green Curry</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='yellow-curry' >Yellow Curry</h4>
+                                    <h4 id='yellow-curry' onclick="addToFoodCart(this.id)" >Yellow Curry</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-12 pt-4 pb-4">
                                     <h1>Noodles</h1>  
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='chicken-noodles' >Chicken</h4>
+                                    <h4 id='chicken-noodles' onclick="addToFoodCart(this.id)" >Chicken</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pork-noodles'>Pork</h4>
+                                    <h4 id='pork-noodles' onclick="addToFoodCart(this.id)">Pork</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                             </div>
@@ -69,26 +69,26 @@
                                 <div class="col-12"><h1>Pho</h1></div>
                                 <div class="menu-items">
                                 <div class="col-8">
-                                    <h4 id='pho-1' >Pho 1</h4>
+                                    <h4 id='pho-1' onclick="addToFoodCart(this.id)" >Pho 1</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pho-2' >Pho 2</h4>
+                                    <h4 id='pho-2' onclick="addToFoodCart(this.id)" >Pho 2</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pho-3' >Pho 3</h4>
+                                    <h4 id='pho-3' onclick="addToFoodCart(this.id)" >Pho 3</h4>
                                     <p>Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-12 pt-4 pb-4">
                                     <h1>Soup</h1>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='chicken-soup' >Chicken</h4>
+                                    <h4 id='chicken-soup' onclick="addToFoodCart(this.id)" >Chicken</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pork-soup' >Pork</h4>
+                                    <h4 id='pork-soup' onclick="addToFoodCart(this.id)" >Pork</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
                                 </div>
                                 
@@ -102,6 +102,7 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="http://www.stocksstuff.com"> Hodge Inc</a>
+            <button class="btn btn-success" onclick="showFoodCart()"></button>
         </div>
         <!-- Copyright -->
 
