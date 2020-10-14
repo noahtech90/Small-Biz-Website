@@ -4,6 +4,8 @@ let selectElement = document.getElementById('today');
 selectElement.innerHTML = formatDate;
 
 let foodCart = [];
+let foodCartNumHTML = document.getElementById("btn-length");
+
 
 
 function changeActive() {
@@ -25,11 +27,11 @@ function changeActive() {
 }
 
 function addToFoodCart(foodItemId) {
-    foodCart.push(foodItemId)
+    foodCart.push(foodItemId);
+    foodCartLength = foodCart.length
+    foodCartNumHTML.innerHTML = foodCartLength;
 }
 
 function showFoodCart() {
-    for (i = 0; i > foodCart.length; i++) {
-        alert(foodCart[i])
-    }
+    alert(foodCart)
 }
