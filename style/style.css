@@ -23,3 +23,14 @@ h1 {
 .active {
     border-bottom: 2px blue solid;
 }
+
+#shopping-cart {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+#shopping-cart i {
+    margin-top: .5rem;
+}
