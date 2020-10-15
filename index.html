@@ -12,55 +12,76 @@
                <body>
 
                 <div class="row">
-                    <div class="col-4"><p class='today mt-2'><time id="today"></time></p> 
+                    <div class="col-2">
+                        <p class='today mt-2'><time id="today"></time></p> 
                     </div>
-                    <div class="col-8" align="right">
-                        <button class="btn btn-success" id="shopping-cart" onclick="showFoodCart()"><i class="fa fa-shopping-basket"><i><p id="btn-length"></p></i></i></button>
+                    <div class="col-8">
+                        <ul class='nav justify-content-center nav-items'>
+                            <li class='nav-item'>
+                                <a href="#" class='nav-link active' onclick="changeActive()">Order Online</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a href="#" class='nav-link' onclick="changeActive()">Menu</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a href="#" class='nav-link' onclick="changeActive()">Check Out</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a href="#" class='nav-link' onclick="changeActive()">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <div align="right">
+                            <button class="btn btn-success" id="shopping-cart" onclick="showFoodCart()"><i class="fa fa-shopping-basket"><i><p id="btn-length"></p></i></i></button>
+                        </div>
                     </div>
                 </div>
-                <ul class='nav justify-content-center'>
-                    <li class='nav-item'>
-                        <a href="#" class='nav-link active' onclick="changeActive()">Order Online</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a href="#" class='nav-link' onclick="changeActive()">Menu</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a href="#" class='nav-link' onclick="changeActive()">Check Out</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a href="#" class='nav-link' onclick="changeActive()">Contact Us</a>
-                    </li>
-                </ul>
+
                 <div class="container">
                     <div class="row content-section">
                         <div class="col-lg-6 col-md-6 col-sm-12" align="center">
                             <div class="menu-list">
                                 <div class="col-12" style=><h1>Curries</h1></div>
                                 <div class="menu-items">
-                                <div class="col-8">
-                                    <h4 id='red-curry' onclick="addToFoodCart(this.id)">Red Curry</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
-                                </div>
-                                <div class="col-8">
-                                    <h4 id='green-curry' onclick="addToFoodCart(this.id)" >Green Curry</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
-                                </div>
-                                <div class="col-8">
-                                    <h4 id='yellow-curry' onclick="addToFoodCart(this.id)" >Yellow Curry</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
-                                </div>
-                                <div class="col-12 pt-4 pb-4">
-                                    <h1>Noodles</h1>  
-                                </div>
-                                <div class="col-8">
-                                    <h4 id='chicken-noodles' onclick="addToFoodCart(this.id)" >Chicken</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
-                                </div>
-                                <div class="col-8">
-                                    <h4 id='pork-noodles' onclick="addToFoodCart(this.id)">Pork</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
-                                </div>
+                                    <div class="col-8">
+                                        <div class="menu-item" id="red-curry">
+                                            <h4 onclick="addToFoodCart(this.id)">Red Curry</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                            <p class="text-muted">$11.99</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="menu-item" id="green-curry">
+                                            <h4 onclick="addToFoodCart(this.id)">Green Curry</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                            <p class="text-muted">$12.99</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="menu-item" id="yellow-curry">
+                                            <h4 onclick="addToFoodCart(this.id)">Yellow Curry</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                            <p class="text-muted">$10.99</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-4 pb-4">
+                                        <h1>Noodles</h1>  
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="chicken-noodles" id="red-curry">
+                                            <h4 onclick="addToFoodCart(this.id)">Chicken Noodles</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                            <p class="text-muted">$10.99</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="menu-item" id="pork-noodles">
+                                            <h4 onclick="addToFoodCart(this.id)">Pork Noodles</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                            <p class="text-muted">$16.99</p>
+                                        </div>
+                                    </div>
                             </div>
                         </div>   
                         </div>
@@ -69,29 +90,43 @@
                                 <div class="col-12"><h1>Pho</h1></div>
                                 <div class="menu-items">
                                 <div class="col-8">
-                                    <h4 id='pho-1' onclick="addToFoodCart(this.id)" >Pho 1</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
+                                    <div class="menu-item" id="pho-1"  onclick="addToFoodCart(this.id)">
+                                        <h4>Pho 1</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                        <p class="text-muted">$11.99</p>
+                                    </div>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pho-2' onclick="addToFoodCart(this.id)" >Pho 2</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
+                                    <div class="menu-item" id="pho-2"  onclick="addToFoodCart(this.id)">
+                                        <h4>Pho 2</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                        <p class="text-muted">$13.99</p>
+                                    </div>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pho-3' onclick="addToFoodCart(this.id)" >Pho 3</h4>
-                                    <p>Labore rerum, minima eos adipisci natus quaerat c</p>
+                                    <div class="menu-item" id="pho-3">
+                                        <h4 onclick="addToFoodCart(this.id)">Pho 3</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                        <p class="text-muted">$14.99</p>
+                                    </div>
                                 </div>
                                 <div class="col-12 pt-4 pb-4">
                                     <h1>Soup</h1>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='chicken-soup' onclick="addToFoodCart(this.id)" >Chicken</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
+                                    <div class="menu-item" id="chicken-soup">
+                                        <h4 onclick="addToFoodCart(this.id)">Chicken Soup</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                        <p class="text-muted">$12.99</p>
+                                    </div>
                                 </div>
                                 <div class="col-8">
-                                    <h4 id='pork-soup' onclick="addToFoodCart(this.id)" >Pork</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat c</p>
+                                    <div class="menu-item" id="beef-soup">
+                                        <h4 onclick="addToFoodCart(this.id)">Beef Soup</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum, minima eos adipisci natus quaerat</p>
+                                        <p class="text-muted">$11.99</p>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
