@@ -38,3 +38,18 @@ h1 {
 .nav-items {
     padding-top: 2rem;
 }
+
+.orders-table {
+
+    width: 90%;
+    font-style: italic;
+}
+
+.orders-table thead {
+    background-color: seashell;
+}
+
+.process-button {
+    margin-left: 75%;
+    margin-top: 1rem;
+}
