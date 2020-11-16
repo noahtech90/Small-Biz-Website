@@ -6,8 +6,6 @@ selectElement.innerHTML = formatDate;
 let foodCart = [];
 let foodCartNumHTML = document.getElementById("btn-length");
 
-
-
 function changeActive() {
     let allNavItems = document.getElementsByClassName("nav-link");
     let length = allNavItems.length;
